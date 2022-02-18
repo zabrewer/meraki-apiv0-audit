@@ -1,6 +1,6 @@
 # Meraki Audit v0 API Requests (v0audit.py)
 -----------------
-
+(Note: this API key belongs to the [Meraki Devnet Sandbox](https://developer.cisco.com/site/sandbox/))
 ![v0audit](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/single_org.png)
 
 ## Description
