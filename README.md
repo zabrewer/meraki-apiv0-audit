@@ -1,7 +1,7 @@
 # Meraki Audit v0 API Requests (v0audit.py)
 -----------------
 
-![v0audit](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/all_orgs.png)
+![v0audit](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/single_org.png)
 
 ## Description
 
@@ -108,7 +108,7 @@ python v0audit.py 6bec4XXXXXXXXXXX all
 
 Hint: if you want to see all orgs that your API key has access to, simply pass in an org name that does not 
 
-[all orgs](assets/all_orgs.png?raw=true)
+[all orgs](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/all_orgs.png)
 
 ## Credit
 
