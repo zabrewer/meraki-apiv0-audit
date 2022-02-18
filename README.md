@@ -108,7 +108,7 @@ python v0audit.py 6bec4XXXXXXXXXXX all
 
 Hint: if you want to see all orgs that your API key has access to, simply pass in an org name that does not 
 
-[all orgs](assets/all_orgs.png)
+[all orgs](assets/all_orgs.png?raw=true)
 
 ## Credit
 
