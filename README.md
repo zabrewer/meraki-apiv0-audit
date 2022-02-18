@@ -98,7 +98,7 @@ v0audit 6bec4XXXXXXXXXXX 'DevNet Sandbox' 'My organization' Testlab --days 5
 Get all v0 API calls for all orgs that the API key has access to for the last 31 days (max):
 
 ```
-python v0audit.py 6bec4XXXXXXXXXXX all
+v0audit 6bec4XXXXXXXXXXX all
 ```
 
 - If the *--days* option is provided, the max is 31, minimum is 1.  The default (no --days option given) is 31
@@ -106,7 +106,11 @@ python v0audit.py 6bec4XXXXXXXXXXX all
 - Providing the *all* orgs argument after the *<API-Key>* argument will return v0 API call audit for all organizations that the given API key has permission to access. 
 - Meraki organizations without API enabled are ignored.
 
-Hint: if you want to see all orgs that your API key has access to, simply pass in an org name that does not 
+Hint: if you want to see all orgs that your API key has access to, simply pass in an org name that does not exist e.g.
+
+```
+v0audit 6bec4XXXXXXXXXXX foo
+```
 
 ![all orgs](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/all_orgs.png)
 
