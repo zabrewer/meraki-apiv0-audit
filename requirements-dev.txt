@@ -1,0 +1,7 @@
+click>=8.0.3
+meraki>=1.15.0
+tqdm>=4.62.3
+isort>=5.10.1
+yapf>=0.32.0 
+commitizen>=2.20.5
+python-semantic-release>=7.24.0 
