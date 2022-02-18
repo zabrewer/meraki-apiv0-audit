@@ -1,7 +1,7 @@
 # Meraki Audit v0 API Requests (v0audit.py)
 -----------------
 
-![v0audit](https://github.com/zabrewer/meraki-apiv0-audit/blob/master/assets/single_org.png?raw=true)
+![v0audit](https://raw.githubusercontent.com/zabrewer/meraki-apiv0-audit/main/assets/all_orgs.png)
 
 ## Description
 
