@@ -13,7 +13,7 @@ import api_req
 
 __author__ = 'Zach Brewer'
 __email__ = 'zbrewer@cisco.com'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 __license__ = 'MIT'
 
 def clean_orgs(all_orgs, user_orgs):
@@ -78,6 +78,8 @@ def export_calls_to_csv(fname, v0_calls, *fields):
                 'org_name',
                 'path',
                 'queryString',
+                'version',
+                'operationId',
                 'responseCode',
                 'sourceIp',
                 'ts',
