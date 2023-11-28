@@ -24,14 +24,20 @@ async def get_orgadmins(aiomeraki, org):
 
     except meraki.exceptions.AsyncAPIError as e:
         print(f'Meraki AIO API Error (OrgID "{ org["id"] }", OrgName "{ org["name"] }"): \n { e }')
+        org_admins = None
 
     except Exception as e:
         print(f'some other ERROR: {e}')
+        org_admins = None
 
     admin_data = []
-    for admin in org_admins:
-        admin.update(org_id = org['id'], org_name = org['name'])
-        admin_data.append(admin)
+    if org_admins:
+        for admin in org_admins:
+            admin.update(org_id = org['id'], org_name = org['name'])
+            admin_data.append(admin)
+    else:
+        org_admins = None
+
 
     return admin_data
 

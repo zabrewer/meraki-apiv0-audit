@@ -90,15 +90,19 @@ async def get_v0_requests(aiomeraki, org, start_date, end_date):
 
     except meraki.exceptions.AsyncAPIError as e:
         print(f'Meraki AIO API Error (OrgID "{ org["id"] }", OrgName "{ org["name"] }"): \n { e }')
+        org_requests = None
 
     except Exception as e:
         print(f'some other ERROR: {e}')
 
     request_data = []
-    for req in org_requests:
-        if 'v0' in req['path']:
-            req.update(org_id = org['id'], org_name = org['name'])
-            request_data.append(req)
+    if org_requests:
+        for req in org_requests:
+            if 'v0' in req['path']:
+                req.update(org_id = org['id'], org_name = org['name'])
+                request_data.append(req)
+    else:
+        org_requests = None
 
     return request_data
 
