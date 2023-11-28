@@ -94,6 +94,7 @@ async def get_v0_requests(aiomeraki, org, start_date, end_date):
 
     except Exception as e:
         print(f'some other ERROR: {e}')
+        org_requests = None
 
     request_data = []
     if org_requests:
